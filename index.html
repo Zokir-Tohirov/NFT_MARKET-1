@@ -13,8 +13,8 @@
 
   <body>
     <!-- Navbar starts -->
-    <nav class="container navbar py-10">
-      <ul class="flex justify-between items-center">
+    <nav class="navbar fixed left-0 top-0 bg-inherit">
+      <ul class="flex  container justify-between items-center">
         <li class="logo">
           <a href="">
             <img src="./assets/images/logo.svg" alt="" />
@@ -29,13 +29,29 @@
           </ul>
         </li>
 
-        <li class=""><a href="">Connect Wallet</a></li>
+        <li class="btn btn-primary-outline"><a href="">Connect Wallet</a></li>
+
+        <li id="menu-btn">
+          <img src="./assets/images/menu.svg" alt="">
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="mobile-navbar">
+      <ul class="flex flex-col gap-10 items-center">
+        <li><a href="">Explore</a></li>
+        <li><a href="">Creators</a></li>
+        <li><a href="">Community</a></li>
+        <li class="btn btn-primary-outline"><a href="">Connect Wallet</a></li>
       </ul>
     </nav>
     <!-- Navbar ends -->
 
+
     <div class="container">
         <h1>Explore, Buy and Sell the Best NFTs!</h1>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
