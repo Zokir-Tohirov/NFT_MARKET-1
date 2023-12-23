@@ -22,7 +22,6 @@ body
     color: var(--light)
     font-family: 'Work Sans', sans-serif
 
-
 .container
     max-width: 1367px
     margin: 0 auto
@@ -32,6 +31,19 @@ body
     padding: 0 2rem
     cursor: pointer
 
+.btn-primary
+    background: var(--primary) 
+    color: black
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: all 0.3s ease-in
+    font-family: "Work Sans", sans-serif
+    font-weight: 600
+    line-height: 36px
+    &:hover
+        background: #FFCE4Ecc
+
 .btn-primary-outline
     border: 1px solid var(--primary)
     background: #E9D7A71A
@@ -40,5 +52,5 @@ body
     align-items: center
     justify-content: center
     transition: all 0.3s ease-in
-    &:hover 
+    &:hover
         background: #E9D7A70a
