@@ -1,103 +1,131 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
 
-  <body>
-    <!-- Navbar starts -->
-    <nav class="navbar fixed left-0 top-0 bg-inherit">
-      <ul class="flex  container justify-between items-center">
-        <li class="logo">
-          <a href="">
-            <img src="./assets/images/logo.svg" alt="" />
-          </a>
-        </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
 
-        <li class="links">
-          <ul class="flex gap-10 items-center">
-            <li><a href="">Explore</a></li>
-            <li><a href="">Creators</a></li>
-            <li><a href="">Community</a></li>
-          </ul>
-        </li>
+<body>
+  <!-- Navbar starts -->
+  <nav class="navbar fixed left-0 top-0 bg-inherit">
+    <ul class="flex  container justify-between items-center">
+      <li class="logo">
+        <a href="">
+          <img src="./assets/images/logo.svg" alt="" />
+        </a>
+      </li>
 
-        <li class="btn btn-primary-outline"><a href="">Connect Wallet</a></li>
+      <li class="links">
+        <ul class="flex gap-10 items-center">
+          <li><a href="">Explore</a></li>
+          <li><a href="">Creators</a></li>
+          <li><a href="">Community</a></li>
+        </ul>
+      </li>
 
-        <li id="menu-btn">
-          <img src="./assets/images/menu.svg" alt="">
-        </li>
-      </ul>
-    </nav>
+      <li class="btn btn-primary-outline"><a href="">Connect Wallet</a></li>
 
-    <nav class="mobile-navbar">
-      <ul class="flex flex-col gap-10 items-center">
-        <li><a href="">Explore</a></li>
-        <li><a href="">Creators</a></li>
-        <li><a href="">Community</a></li>
-        <li class="btn btn-primary-outline"><a href="">Connect Wallet</a></li>
-      </ul>
-    </nav>
-    <!-- Navbar ends -->
+      <li id="menu-btn">
+        <img src="./assets/images/menu.svg" alt="">
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="mobile-navbar">
+    <ul class="flex flex-col gap-10 items-center">
+      <li><a href="">Explore</a></li>
+      <li><a href="">Creators</a></li>
+      <li><a href="">Community</a></li>
+      <li class="btn btn-primary-outline"><a href="">Connect Wallet</a></li>
+    </ul>
+  </nav>
+  <!-- Navbar ends -->
 
 
-    <div class="container">
-        
-      <!--============== Hero section starts============== -->
-      <section class="section hero">
+  <div class="container">
 
-        <div class="hero__top grid grid-cols-2 gap-10 h-full">
+    <!--============== Hero section starts============== -->
+    <section class="section hero">
 
-          <div class="h-full flex items-start justify-evenly flex-col" >
-            <!-- left -->
-            <h1>Explore, Buy and Sell the <span>Best NFTs!</span> </h1>
+      <div class="hero__top grid grid-cols-1 md:grid-cols-2 gap-10 h-full">
 
-            <div class="flex items-center justify-self-start gap-10">
-              <button class="btn btn-primary-outline">Explore</button>
-              <button class="btn btn-primary ">Create</button>
-            </div>
+        <div class="h-full flex items-start justify-evenly flex-col gap-5">
+          <!-- left -->
+          <h1 class="lg:!text-7xl !text-[42px] !leading-[63px] md:!text-5xl !text-center md:!text-left">Explore, Buy and Sell the <span>Best NFTs!</span> </h1>
 
-
-            <div class="flex items-center justify-between gap-5">
-
-              <div class="hero-stat-card flex flex-col">
-                <h2 class="text-center">32k+</h2>
-                <p class="text-center">Artworks</p>
-              </div>
-
-              <div class="hero-stat-card flex flex-col">
-                <h2 class="text-center">20k+</h2>
-                <p class="text-center">Artworks</p>
-              </div>
-
-              <div class="hero-stat-card flex flex-col">
-                <h2 class="text-center">12k+</h2>
-                <p class="text-center">Artworks</p>
-              </div>
-
-            </div>
-
+          <div class="flex w-full items-center md:!justify-start  !justify-center gap-10">
+            <button class="btn btn-primary-outline w-[155px] 2xl:w-[257px] xl:w-[190px]">Explore</button>
+            <button class="btn btn-primary w-[155px]  2xl:w-[257px] xl:w-[190px] ">Create</button>
           </div>
 
-          <div>
-            <!-- right -->
-            <h1>right</h1>
+
+          <div class="flex items-center justify-around md:justify-between gap-5 w-full">
+
+            <div class="hero-stat-card flex flex-col">
+              <h2 class="text-center !text-[36px] 2xl:text-inherit md:!text-[40px]">32k+</h2>
+              <p class="text-center !text-[18px]   2xl:text-inherti md:!text-[20px]">Artworks</p>
+            </div>
+
+            <div class="hero-stat-card flex flex-col">
+              <h2 class="text-center !text-[36px] 2xl:text-inherit md:!text-[40px]">32k+</h2>
+              <p class="text-center !text-[18px]   2xl:text-inherti md:!text-[20px]">Artworks</p>
+            </div>
+
+            <div class="hero-stat-card flex flex-col">
+              <h2 class="text-center !text-[36px] 2xl:text-inherit md:!text-[40px]">32k+</h2>
+              <p class="text-center !text-[18px]   2xl:text-inherti md:!text-[20px]">Artworks</p>
+            </div>
+
+           
+
           </div>
 
         </div>
 
-      </section>
-      <!--============== Hero section ends ==============-->
+        <div class="hero__right p-[1rem] md:p-0 ">
+          <!-- right -->
+          <div class="wrapper relative min-h-[378px]">
 
-    </div>
+            <div class="flex items-center justify-between wrapper-items">
 
-    <script src="./script.js"></script>
-  </body>
+              <div class="wrapper-card">
+                <p class="md:!text-inherit md:!leading-inherit !text-[16x] !leading-[27px]">Current bid</p>
+                <h3  class="md:!text-inherit md:!leading-inherit !text-[22x] !leading-[30px]" >0.99 ETH</h3>
+              </div>
+
+              <div class="wrapper-card">
+                <p class="md:!text-inherit md:!leading-inherit !text-[16x] !leading-[27px]">0.99 ETH</p>
+                <h3  class="md:!text-inherit md:!leading-inherit !text-[22x] !leading-[30px]" >25 hrs</h3>
+              </div>
+
+            </div>
+
+            <div class="wraper-footer h-[82px] md:h-[142px] flex items-center justify-around absolute left-0 bottom-0 w-full bg-[#B5C8DB]">
+              <div>
+                <h3 class="text-[#16091B] font-bold  text-[16px] leading-[22px] md:text-[28px] md:leading-[35px] ">Artist</h3>
+                <p class="md:text-[24px] text-[#594D5E] text-[14px] leading-[35px]">@wzard</p>
+              </div>
+
+              <button class="btn btn-primary border-none outline-none md:text-[24px] md:leading-[28px] text-[16px] leading-[18px] h-[72px]">Start Bid</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!--============== Hero section ends ==============-->
+
+  </div>
+
+  <div class="w-[228px] h-[167px]  bg-[#E7B226B2] blur-[100px]"></div>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
