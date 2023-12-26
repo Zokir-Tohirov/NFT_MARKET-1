@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <!-- Navbar starts -->
   <nav class="navbar fixed left-0 top-0 bg-inherit">
     <ul class="flex  container justify-between items-center">
@@ -51,15 +51,18 @@
     <!--============== Hero section starts============== -->
     <section class="section hero">
 
-      <div class="hero__top grid grid-cols-1 md:grid-cols-2 gap-10 h-full">
-
+      <div class="hero__top grid grid-cols-1 relative md:grid-cols-2 gap-10 h-full">
+        <button class="absolute bottom-[-78px] right-[calc(50%-70px)] w-[156px] h-[156px] rounded-full bg-[#6d5b7266] grid place-content-center ">
+          <img src="./assets/images/Arrow 1.svg" alt="">
+        </button>
         <div class="h-full flex items-start justify-evenly flex-col gap-5">
           <!-- left -->
           <h1 class="lg:!text-7xl !text-[42px] !leading-[63px] md:!text-5xl !text-center md:!text-left">Explore, Buy and Sell the <span>Best NFTs!</span> </h1>
 
-          <div class="flex w-full items-center md:!justify-start  !justify-center gap-10">
-            <button class="btn btn-primary-outline w-[155px] 2xl:w-[257px] xl:w-[190px]">Explore</button>
-            <button class="btn btn-primary w-[155px]  2xl:w-[257px] xl:w-[190px] ">Create</button>
+          <div class="relative flex w-full items-center md:!justify-start  !justify-center gap-10">
+            <div class="absolute left-[-200px] z-[-1] w-[228px] h-[167px]  bg-[#E7B226B2] blur-[100px] "></div>
+            <button class="btn btn-primary w-[155px]  2xl:w-[257px] xl:w-[190px] ">Explore</button>
+            <button class="btn btn-primary-outline w-[155px] 2xl:w-[257px] xl:w-[190px]">Create</button>
           </div>
 
 
@@ -71,13 +74,13 @@
             </div>
 
             <div class="hero-stat-card flex flex-col">
-              <h2 class="text-center !text-[36px] 2xl:text-inherit md:!text-[40px]">32k+</h2>
-              <p class="text-center !text-[18px]   2xl:text-inherti md:!text-[20px]">Artworks</p>
+              <h2 class="text-center !text-[36px] 2xl:text-inherit md:!text-[40px]">20k+</h2>
+              <p class="text-center !text-[18px]   2xl:text-inherti md:!text-[20px]">Auctions</p>
             </div>
 
             <div class="hero-stat-card flex flex-col">
-              <h2 class="text-center !text-[36px] 2xl:text-inherit md:!text-[40px]">32k+</h2>
-              <p class="text-center !text-[18px]   2xl:text-inherti md:!text-[20px]">Artworks</p>
+              <h2 class="text-center !text-[36px] 2xl:text-inherit md:!text-[40px]">12k++</h2>
+              <p class="text-center !text-[18px]   2xl:text-inherti md:!text-[20px]">Creators</p>
             </div>
 
            
@@ -87,9 +90,10 @@
         </div>
 
         <div class="hero__right p-[1rem] md:p-0 ">
-          <!-- right -->
-          <div class="wrapper relative min-h-[378px]">
 
+          <!-- right -->
+          <div class="wrapper relative min-h-[378px] mx-auto my-auto">
+            <div class="absolute right-[-200px] top-[100px] z-[-1] w-[30vw] h-[20vh]  bg-[#E7B226B2] blur-[20vh] "></div>
             <div class="flex items-center justify-between wrapper-items">
 
               <div class="wrapper-card">
@@ -120,10 +124,15 @@
 
     </section>
     <!--============== Hero section ends ==============-->
-
+  <div class="h-[20vh] flex justify-between items-center flex-wrap gap-[1rem] flex-col md:flex-row">
+    <img src="./assets/images/Vector.svg" alt="">
+    <img src="./assets/images/2.svg" alt="">
+    <img src="./assets/images/binance 1.svg" alt="">
+    <img src="./assets/images/bitmex 1.svg" alt="">
+  </div>
   </div>
 
-  <div class="w-[228px] h-[167px]  bg-[#E7B226B2] blur-[100px]"></div>
+  
 
   <script src="./script.js"></script>
 </body>
